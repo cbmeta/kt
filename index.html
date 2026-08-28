@@ -41,12 +41,7 @@ document.getElementById('addToWishlistButton').addEventListener('click', functio
 }, false);
 
 document.getElementById('addToCartButton').addEventListener('click', function() {
-  fbq('init', '1761908628272252', { external_id: 'customer_123' });
-fbq('track', 'AddToCart', {
-    content_type: 'product',
-    currency: 'USD',      // browser only
-    value: 139.99         // in both -> untagged
-  }, { eventID: 'test-0014' });
+  fbq('track', 'AddToCart');
 }, false);
 
 document.getElementById('checkoutButton').addEventListener('click', function() {
